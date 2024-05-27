@@ -1,12 +1,12 @@
 plugins {
     id 'java'
-    id 'org.jetbrains.intellij' version '1.12.0'
+    id 'org.jetbrains.intellij' version '1.17.3'
 //    id "org.jetbrains.kotlin.jvm" version '1.2.70'
 }
 
 
 group 'com.alibaba.compileflow.designer'
-version '1.0.16'
+version '1.0.17'
 
 sourceCompatibility = 1.8
 
@@ -41,6 +41,7 @@ allprojects {
 //        compile name: 'miglayout-core-5.3-SNAPSHOT'
 //        compile name: 'miglayout-swing-5.3-SNAPSHOT'
 //        compile name: 'mxgraph-all'
+        implementation("com.alibaba.compileflow:compileflow:1.2.0")
 //        compile name: 'compileflow-1.2.0-SNAPSHOT-jar-with-dependencies'
 //        compile name: 'logback-core-1.1.8'
 //        compile name: 'logback-classic-1.1.8'
@@ -53,7 +54,7 @@ allprojects {
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
 //    version '2018.2'
-    version = '2022.3'
+    version = '2024.1'
     plugins = ['java']
 }
 patchPluginXml {
@@ -112,10 +113,13 @@ patchPluginXml {
       
       <em>1.0.16 bugfix（感谢chenqiyue的PR分支支持）</em><br>
       1. 2022.3的idea支持  <br>
-      2. 修复部分bug  <br>
+      2. 修复部分bug  <br> 
+      
+      <em>1.0.17 </em><br>
+      1. 2024.1的idea支持  <br>
       
       """
 
     sinceBuild = '162.*'
-    untilBuild = '223.*'
+    untilBuild = '241.*'
 }

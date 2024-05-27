@@ -122,6 +122,8 @@ https://github.com/compileflow/compileflow-designer-upgrade
 * bugfix：1.0.16 （2023.2.15）by xuan（感谢：chenqiyue分支PR的支持）
     * 2022.3的idea支持  <br>
     * 修复一些BUG  <br>
+* bugfix：1.0.17 
+  * 2024.1的idea支持  <br>
 
       
       
